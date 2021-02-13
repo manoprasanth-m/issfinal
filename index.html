@@ -12,6 +12,15 @@
 </head>
 
 <body>
+  <div id="container"></div>
+  <script src="starfield.js"></script>
+  <script>
+      //  Get the container and turn it into a starfield.
+      var container = document.getElementById('container');
+      var starfield = new Starfield();
+      starfield.initialise(container);
+      starfield.start();
+  </script>
     <div>
         <div class="alert alert-success fade show" role="alert">
             <strong>Zoom In or Out in order to view the position of the ISS better . Psst ... try out the Satellite View</strong>
